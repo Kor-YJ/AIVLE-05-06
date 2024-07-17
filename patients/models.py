@@ -24,3 +24,4 @@ class Patient(models.Model):  # 환자
         verbose_name_plural = "환자"
         #일단 db에 만들려면 settings에서 installed app에 추가
         #그다음에 python manage.py makemigrations 와 migrate를 해줘야함
+

@@ -3,6 +3,7 @@ from . import views
 from .views import *
 
 urlpatterns = [
+
     path('add/', views.add_patient, name='add_patient'),
     path('list/', views.patients_list, name='patients_list'),
     path('list2/', PatientListAPIView.as_view(), name='patient-list2'), # 전체환자 조회
@@ -12,3 +13,4 @@ urlpatterns = [
     path('<int:patient_id>/reservations/', patient_reservations, name='patient-reservations'),
     path('reservations/<int:reservation_id>/change_status/', change_reservation_status, name='change-reservation-status'),
 ]
+

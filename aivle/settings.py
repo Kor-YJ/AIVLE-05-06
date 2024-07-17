@@ -32,6 +32,7 @@ AUTH_USER_MODEL = 'accounts.User'  # yourapp을 실제 앱 이름으로 대체�
 # LOGOUT_REDIRECT_URL = '/'
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,18 +42,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    "accounts",
+
+    'patients' # db에 migrations하려면 여기에 추가해줘야함
+    'chatbot',
     'consultations',
-    'departments',
+    'departmenets',
     'doctors',
-    'patients',
-    'payments',
+    'payments'
     'prescriptions',
     'reservations',
-    'chatbot',
-    
-    'rest_framework',
+    'accounts',
+
+
 ]
 
 MIDDLEWARE = [
@@ -93,6 +94,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'OPTIONS':{
+            'timeout':20,
+        }
     }
 }
 
@@ -121,11 +125,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ko-kr'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
