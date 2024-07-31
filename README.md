@@ -1,37 +1,26 @@
-# 🏫 음성인식을 통한 대화형 병원 키오스크
+# 🏫 음성인식 대화형 챗봇 병원 키오스크
 
-> **"KITO 🤖 는 키오스크에서 대화를 통해 병원의 접수, 수납, 제증명, 길찾기 기능을 진행하여 노약자, 장애인, 농어민 등 디지털 소외계층을 위해 개발되었습니다.**
+> **"🤖" 는 키오스크에서 대화를 통해 병원의 접수, 수납, 제증명, 길찾기 기능을 진행하여 노약자 등 디지털 소외계층을 위해 개발되었습니다.**
 >
 
-![AI 6조 썸네일](https://github.com/user-attachments/assets/ada1e0d2-1984-4fee-9a21-ec611f1d22cc)
-
-## 📺 시연영상
-> 음성인식을 통한 대화형 챗봇 화면에 대한 시연영상입니다.
-
-
-[시연영상.mp4.zip](https://github.com/user-attachments/files/16398723/mp4.zip)
 
 
 ## 🫂팀원
 
-📌 `AI 수도권 2반 6조` 
+`AI 수도권 2반 6조`
 
-## Team
-| 👑 심연준 | 배지현 | 이정호 | 박현일 | 박정민 | 이승연 | 윤석일 |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|<img src="https://avatars.githubusercontent.com/u/101186255?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/97018919?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/96129738?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/96129738?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/103491409?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/96129738?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/96129738?v=4" width="100" height="100"/>|
-|[@Kor-YJ](https://github.com/Kor-YJ)|[@Bae-JiHyeon](https://github.com/Bae-JiHyeon)|||[@park000103](https://github.com/park000103)||[@IcandoDeveloper](https://github.com/IcandoDeveloper)|
-| 백엔드 | 백엔드 | 프론트엔드 | 프론트엔드 | AI 모델링 | AI 모델링 | AI 모델링 |
+📌 심연준, 박정민, 박현일, 배지현, 윤석일, 이승연, 이정호
+
 
 
 ## 🔍 목차
 
 - 개발 배경 및 목적(Usage)
+- 가상환경 세팅하는 방법 (Venv Setting)
 - 서비스 플로우 (Service Flow)
-- 아키텍처 정의서(Service Architecture)
+- 서비스 아키텍쳐(Service Architecture)
 - DB 설계 (Database Design)
 - 개발 환경 (Development Environment)
-- AI 모델링 (AI Modeling)
 - 유저 인터페이스(User Interface)
 - 라이센스(License)
 
@@ -46,29 +35,28 @@
 > 
 
 
-## 2️⃣ **서비스 플로우**
 
-<img width="639" alt="서비스 플로우" src="https://github.com/user-attachments/assets/81b30621-d8d6-4b91-b6cf-dbba4df7c307">
+## 2️⃣ **가상환경 세팅하는 방법**
 
-## 3️⃣ **아키텍처 정의서**
+anaconda / python설치
 
-<img width="896" alt="스크린샷 2024-07-24 오후 12 48 39" src="https://github.com/user-attachments/assets/81281997-e1f2-4bc7-aa59-9d9f83148cce">
+conda create -n <가상환경 이름> python=3.11
 
-## 4️⃣ **DB 설계**
+conda env list : 아나콘다에 존재하는 가상환경 리스트를 확인
 
-<img width="588" alt="erd" src="https://github.com/user-attachments/assets/fd540f06-a5e4-462a-83ba-820ba49f98f7">
+conda activate <가상환경 이름>
 
-## 5️⃣ **AI 모델링**
-| <img src="https://github.com/user-attachments/assets/3a8a8136-dc6a-4e6e-b470-5b14876293a4" width="150"/> | <img src="https://github.com/user-attachments/assets/2c503e0c-8727-493d-8b2d-657c52522415" width="150"/> | <img src="https://github.com/user-attachments/assets/cc282606-7e1c-4f01-9dae-e5e5052d76ba" width="150"/> |
-|:-------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|
-| Google Cloud STT                                                                                       | Voiceflow                                                                       | KM-BERT                                                                       |
-| 음성인식모델                                                                                           | 대화흐름설계플랫폼                                                                     | 진료과 추천서비스                                                                     |
+pip install -r requirements.txt
 
+ipyb 파일에서 커널 선택하여 내가 생성한 가상환경 연결
 
+## 3️⃣ **서비스 플로우**
 
+## 4️⃣ **서비스 아키텍처**
 
+## 5️⃣ **DB 설계**
 
-## 6️⃣ **개발 환경**
+## 6️⃣ 개발 환경
 
 ### 🚀  FrontEnd
 
@@ -85,11 +73,6 @@
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
-### 🪓 AI
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
-![Voiceflow](https://img.shields.io/badge/Voiceflow-000000?style=for-the-badge&logo=voiceflow&logoColor=white)
-
 ### 👥  Etc
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
@@ -104,3 +87,7 @@
 ## 8️⃣ **License**
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+
